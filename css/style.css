@@ -1,5 +1,3 @@
-
-
 html body {
   margin: 0;
   padding: 0;
@@ -33,18 +31,18 @@ html body {
   align-items: center;
   height: 100%;
 }
-.header-logo{
+.header-logo {
   margin-left: 20rem;
   padding-top: 1.25rem;
   margin-right: 4rem;
 }
-.logo-svg{
+.logo-svg {
   width: 6.25rem;
 }
 .header-nav-item:not(:last-child) {
   margin-right: 3.125rem;
 }
-.header-nav-link{
+.header-nav-link {
   width: 85px;
   height: 20px;
   font-size: 20px;
@@ -57,7 +55,7 @@ html body {
   color: #07060b;
   text-decoration: none;
 }
-.navbar-button{
+.navbar-button {
   width: 132px;
   height: 50px;
   display: flex;
@@ -71,43 +69,108 @@ html body {
   cursor: pointer;
   margin-right: 320px;
 }
-.button-text{
-    width: 69px;
-    height: 16px;
-    flex-grow: 0;
-    font-size: 16px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: #fff;
-    text-decoration: none;
+.button-text {
+  width: 69px;
+  height: 16px;
+  flex-grow: 0;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
 }
-.section-hello{
+.section-hello {
   display: flex;
   padding-top: 80px;
 }
-.bg-section-hello{
-    width: 100%;
-    height: 680px;
-    background-color: #07060b;
+.bg-section-hello {
+  width: 100%;
+  height: 680px;
+  background-color: #07060b;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  align-items: flex-end;
 }
-.section-hello-image{
+.section-hello-image {
   background-image: url("../img/stickers_hero.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center bottom -3.4375rem;
   position: relative;
+  width: 944px;
+  height: 680px;
+  object-fit: contain;
 }
-.section-hello-image::before {
-  content: "";
-  top: 0;
-  left: 0;
-  position: absolute;
-  background: rgba(41, 45, 52, 0.75);
-  width: 100%;
-  height: 100%;
-  z-index: 0;
+.bg-section-hello-wrapper {
+  display: flex;
+  width: 621px;
+  height: 254px;
+  flex-wrap: wrap;
+  padding-bottom: 266px;
+  padding-right: 35px;
+}
+.section-hello-text {
+  width: 621px;
+  height: 254px;
+  flex-grow: 0;
+  margin: 0 0 36px;
+  font-family: RussoOne;
+  font-size: 70px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+.buttons {
+  display: flex;
+}
+.section-hello-button {
+  width: 176px;
+  height: 70px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 25px 54px;
+  border-radius: 40px;
+  background-image: linear-gradient(to bottom, #46f4db, #57d272);
+  margin-right: 32px;
+}
+.section-hello-button-2 {
+  width: 247px;
+  height: 70px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 40px;
+  background-image: linear-gradient(#07060b, #07060b);
+  border-style: solid;
+  border-image-source: linear-gradient(#46f4db 50%, #57d272);
+  border-image-slice: 1;
+}
+.button-text-section-hello-2 {
+  width: 139px;
+  height: 20px;
+  flex-grow: 0;
+  font-family: Muller;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
 }
