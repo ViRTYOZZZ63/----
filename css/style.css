@@ -300,6 +300,9 @@ html body {
   padding: 32px 57px 32px 32px;
   border-radius: 40px;
   background-color: #ededf2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .deadline {
   width: 460px;
@@ -309,7 +312,99 @@ html body {
   border-radius: 40px;
   background-color: #07060b;
 }
+.deadline-wrapper {
+  display: grid;
+  grid-template-columns: 261px 121px;
+  grid-template-rows: 20px 121px;
+  grid-row-gap: 16px;
+}
 .alarm-clock {
   width: 121px;
   height: 121px;
+}
+.deadline-title {
+  width: 172px;
+  height: 20px;
+  font-family: Muller;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  /* margin-right: 103px; */
+}
+.timer-wrapper {
+  display: flex;
+}
+.symbol {
+  width: 57px;
+  height: 48px;
+  flex-grow: 0;
+  font-family: Muller;
+  font-size: 48px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+.text {
+  width: 35px;
+  height: 20px;
+  flex-grow: 0;
+  font-family: Muller;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+.bet-title {
+  width: 72px;
+  height: 20px;
+  font-family: Muller;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  margin-bottom: 16px;
+  color: #07060b;
+}
+.bet-summ {
+  width: 207px;
+  height: 48px;
+  font-family: Muller;
+  font-size: 48px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #07060b;
+  margin-bottom: 6px;
+}
+.bet-to-dollars {
+  width: 76px;
+  height: 20px;
+  font-family: Muller;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #95959d;
 }
