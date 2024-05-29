@@ -133,7 +133,7 @@ html body {
   text-align: left;
   color: #fff;
 }
-.section-hello-text{
+.section-hello-text {
   font-size: 70px;
 }
 .buttons {
@@ -187,7 +187,7 @@ html body {
   width: 100%;
   height: 106.75rem;
 }
-.section-title{
+.section-title {
   color: black;
   margin: 0;
   margin-left: 320px;
@@ -195,34 +195,34 @@ html body {
   height: 72px;
   margin-bottom: 32px;
 }
-.avatar{
-    width: 460px;
-    height: 460px;
-    margin: 32px 32px 0 0;
-    object-fit: contain;
+.avatar {
+  width: 460px;
+  height: 460px;
+  margin: 32px 32px 0 0;
+  object-fit: contain;
 }
-.title-container{
+.title-container {
   display: flex;
   margin-top: 90px;
 }
-.section-sale-title-info{
-    width: 135px;
-    height: 36px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    margin: 19px 76px 49px 16px;
-    border-radius: 40px;
-    border: solid 2px #d13130;
+.section-sale-title-info {
+  width: 135px;
+  height: 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 19px 76px 49px 16px;
+  border-radius: 40px;
+  border: solid 2px #d13130;
 }
-.live{
-    width: 6px;
-    height: 6px;
-    flex-grow: 0;
-    background-color: #d13130;
-    border-radius: 60px;
+.live {
+  width: 6px;
+  height: 6px;
+  flex-grow: 0;
+  background-color: #d13130;
+  border-radius: 60px;
 }
 .Live-auction {
   width: 94px;
@@ -238,13 +238,13 @@ html body {
   text-align: center;
   color: #d13130;
 }
-.section-sale-myinfo{
+.section-sale-myinfo {
   display: flex;
 }
-.section-sale-myinfo-container{
+.section-sale-myinfo-container {
   margin-left: 320px;
 }
-.nickname-wrapper{
+.nickname-wrapper {
   width: 228px;
   height: 70px;
   display: flex;
@@ -257,27 +257,27 @@ html body {
   border-radius: 23px;
   background-color: #ededf2;
 }
-.nicnkame-icon{
-    width: 48px;
-    height: 48px;
-    flex-grow: 0;
-    object-fit: contain;
+.nicnkame-icon {
+  width: 48px;
+  height: 48px;
+  flex-grow: 0;
+  object-fit: contain;
 }
-.nickname-text{
-    width: 132px;
-    height: 20px;
-    flex-grow: 0;
-    font-family: Muller;
-    font-size: 20px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #07060b;
+.nickname-text {
+  width: 132px;
+  height: 20px;
+  flex-grow: 0;
+  font-family: Muller;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #07060b;
 }
-.coin{
+.coin {
   width: 446px;
   height: 50px;
   font-family: Muller;
@@ -290,10 +290,10 @@ html body {
   text-align: left;
   color: #07060b;
 }
-.bet-info{
+.bet-info {
   display: flex;
 }
-.bet{
+.bet {
   width: 296px;
   height: 174px;
   margin: 32px;
@@ -301,11 +301,15 @@ html body {
   border-radius: 40px;
   background-color: #ededf2;
 }
-.deadline{
+.deadline {
   width: 460px;
   height: 174px;
   margin: 32px 0 32px 32px;
   padding: 27px 32px 26px;
   border-radius: 40px;
   background-color: #07060b;
+}
+.alarm-clock {
+  width: 121px;
+  height: 121px;
 }
