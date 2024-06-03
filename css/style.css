@@ -408,3 +408,38 @@ html body {
   text-align: left;
   color: #95959d;
 }
+.card{
+  width: 296px;
+  height: 174px;
+  margin: 0 0 16px;
+  padding: 7px 68px;
+  background-color: #ededf2;
+}
+.card-content{
+  width: 296px;
+  height: 342px;
+  margin: 32px 32px 32px 0;
+  padding: 0 0 32px;
+  border-radius: 40px;
+  background-color: #07060b;
+}
+@media (max-width: 1550px) {
+  .section-sale-myinfo-container {
+    margin-left: 120px;
+  }
+}
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+
+}
+@media (max-width: 375px) {
+  
+}
