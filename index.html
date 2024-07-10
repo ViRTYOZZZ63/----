@@ -232,24 +232,6 @@
               <img class="title-icon" src="/img/flash.png" alt="flash">
               <span class="newstickers">Новые стикеры</span>
             </div>
-           
-             <!-- <div class="swiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <img src="/img/sliderimages/Ghost-1.png" alt="">
-      <img src="/img/sliderimages/Ghost-2.png" alt="">
-      <img src="/img/sliderimages/Parental Advisory 1.png" alt="">
-    </div>
-    <div class="swiper-slide">
-      <img src="/img/sliderimages/Ghost-1.png" alt="">
-      <img src="/img/sliderimages/Ghost-2.png" alt="">
-      <img src="/img/sliderimages/Parental Advisory 1.png" alt="">
-    </div>
-    <div class="swiper-slide"></div>
-  </div>
-  <div class="swiper-pagination"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div> -->
   <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
     <div class="carousel-indicators" style="margin-bottom: -3rem;">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Слайд 1"></button>
@@ -287,28 +269,97 @@
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden"><ya-tr-span data-index="8-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Previous" data-translation="Назад" data-ch="0" data-type="trSpan" style="visibility: initial !important;">Назад</ya-tr-span></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden"><ya-tr-span data-index="8-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Next" data-translation=" Далее" data-ch="0" data-type="trSpan" style="visibility: initial !important;"> Далее</ya-tr-span></span>
-    </button>
   </div>
           </div>
         </div>
       </div>
       <div class="section-contact">
-        <div class="bg-red">
-
+        <div class="bg-red"><div class="section-contact-wrapper">
+            <h2 class="section-contact-title">Будь в курсе новинок! Подпишись на рассылку!</h2>
+            <form onsubmit="handleSubmit(event)" class="contact-form">
+              <input class="action-form" type="text" placeholder="Имя" required>
+              <input class="action-form" type="email" placeholder="E-mail" required>
+              <button class="section-contact-button" type="submit">Подписаться</button>
+            </form>
+            <div class="checkbox-politicy">
+              <label class="checkbox-container">
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <p class="politicy-text">
+              Согласен на обработку персональных данных
+            </p>
+            </div>
+          </div>
+          <div class="section-contact-image">
+          </div>
         </div>
       </div>
-    </div>
+      <div class="section-faq">
+        <div class="bg-white">
+          <div class="section-faq-wrapper">
+            <h2 class="section-faq-title">Стать автором</h2>
+            <h3 class="motivation">Если ты художник или стремишься им стать — добро пожаловать к нам!</h3>
+            <p class="message-to-telegram">Отправь нам от трёх до пяти своих работ и напиши свой ник в телеграме. Если наши кураторы решат, что нам по пути, то мы обязательно свяжемся с тобой и обговорим условия сотрудничества! Удачи!</p>
+            <div class="section-faq-love-image"></div>
+          </div>
+          <div class="force-feedback">
+            <a href="/">
+            <div class="section-faq-image"></div>
+          </a>
+          <form onsubmit="handleSubmit(event)" class="contact-form">
+            <input class="action-form action-form-faq" type="text" placeholder="@telegram_nickname" required>
+            <button class="section-contact-button" type="submit">Отправить</button>
+          </form>
+          </div>
+        </div>
+      </div>
+      <div class="section-top">
+        <div class="bg-black bg-black-top"></div>
+      </div>
     <script src="js/main.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      // Функция для отправки сообщения в Телеграм
+      function sendMessageToTelegram(data) {
+       const botToken = '6390722480:AAFt8bwcszfWA337NRju7cTpuZzl58H1zvw'; 
+       const chatId = '-4110129036'; 
+       const telegramApiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
+       const messageText = `Имя: ${data.username}\nТелефон: ${data.userphone}`;
+ 
+       fetch(telegramApiUrl, {
+         method: 'POST',
+         headers: {
+           'Content-Type': 'application/json',
+         },
+         body: JSON.stringify({
+           chat_id: chatId,
+           text: messageText,
+         }),
+       })
+       .then(response => response.json())
+       .then(data => {
+         console.log('Успешно отправлено:', data);
+       })
+       .catch(error => {
+         console.error('Ошибка при отправке:', error);
+       });
+     }
+ 
+     function handleSubmit(event) {
+       event.preventDefault(); // Предотвращаем отправку формы по умолчанию
+ 
+       const form = event.target;
+       const formData = {
+         username: form.username.value,
+         userphone: form.userphone.value,
+       };
+ 
+       sendMessageToTelegram(formData); // Отправляем данные в Телеграм
+     }
+ </script>
   </body>
   </body>
 </html>
