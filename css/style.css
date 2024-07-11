@@ -732,6 +732,158 @@ input, select, textarea{
 .bg-black-top{
   height: 54.375rem;
 }
+.title-container{
+  display: flex;
+}
+.section-top-title{
+  font-family: RussoOne;
+  font-size: 60px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  margin-left: 20rem;
+  margin-top:  5.625rem;
+}
+.section-top-cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-left: 20rem;
+  margin-right: 20rem;
+  margin-top: 2rem;
+}
+.top-card{
+  text-decoration: none;
+}
+.top-card-content{
+  width: 624px;
+  height: 174px;
+  border-radius: 40px;
+  display: flex;
+  background: linear-gradient(to right, #ededf2 0%, #ededf2 24.3%, #fff 0%, #fff 100%);
+  flex-direction: row;
+}
+.top-card-icons-wrapper{
+  display: flex;
+  justify-content: center;
+  margin-top: 7px;
+}
+.top-card-icons{
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+}
+.top-card-content-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-left: 32px;
+  justify-content: flex-end;
+}
+.top-card-nickname{
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+.price-container{
+  display: flex;
+}
+.top-card-nickname-text{
+  font-family: Muller;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #07060b;
+}
+.top-card-title{
+  font-family: Muller;
+  font-size: 48px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #07060b;
+}
+.top-card-priceETH{
+  font-family: Muller;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #07060b;
+}
+.top-card-pricedollar{
+  font-family: Muller;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #95959d;
+}
+.bg-grey{
+  width: 100%;
+  height: 232px;
+  background-color: #37373e;
+}
+.rules-wrapper{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 32px;
+}
+.rules{
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+.rules-title{
+  font-family: Muller;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+.rules-text{
+  font-family: Muller;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+.rules-text-wrapper{
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.smiles{
+  width: 460px;
+  height: 160px;
+  object-fit: contain;
+}
 @media (max-width: 1550px) {
   .section-sale-myinfo-container {
     margin-left: 7.5rem;
@@ -745,6 +897,10 @@ input, select, textarea{
   }
   .section-faq-wrapper{
     margin-left: 11.3125rem;
+  }
+  .section-top-cards{
+    margin-left: 7rem;
+    margin-right: 7rem;
   }
 }
 @media (max-width: 1200px) {
